@@ -1,0 +1,344 @@
+[
+  {
+    "id": "export-filter",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:00:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "export-filter/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "export-filter/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "export-filter/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "export-filter/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "deny",
+        "source": "export-filter/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "export-filter/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "import-filter",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:01:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "import-filter/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "deny",
+        "source": "import-filter/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "import-filter/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "absent",
+        "source": "import-filter/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "import-filter/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "import-filter/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "upstream-missing",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:02:00Z",
+    "reads": {
+      "received": {
+        "value": "absent",
+        "source": "upstream-missing/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "upstream-missing/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "upstream-missing/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "absent",
+        "source": "upstream-missing/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "upstream-missing/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "upstream-missing/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "recursive-lookup",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:03:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "recursive-lookup/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "recursive-lookup/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "unreachable",
+        "source": "recursive-lookup/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "absent",
+        "source": "recursive-lookup/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "recursive-lookup/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "recursive-lookup/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "peer-offline",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:04:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "peer-offline/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "peer-offline/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "peer-offline/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "peer-offline/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "peer-offline/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "session_down",
+        "source": "peer-offline/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "advertised",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:05:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "advertised/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "advertised/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "advertised/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "advertised/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "advertised/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "advertised",
+        "source": "advertised/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "transient-export",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:06:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "transient-export/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "transient-export/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "transient-export/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "transient-export/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "deny",
+        "source": "transient-export/R2/blue/export_policy",
+        "failures": 1
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "transient-export/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "incomplete-export",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:07:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "incomplete-export/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "incomplete-export/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "incomplete-export/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "incomplete-export/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "deny",
+        "source": "incomplete-export/R2/blue/export_policy",
+        "failures": 3
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "incomplete-export/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "other-selection",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:08:00Z",
+    "reads": {
+      "received": {
+        "value": "present",
+        "source": "other-selection/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "other-selection/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "other-selection/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "absent",
+        "source": "other-selection/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "other-selection/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "other-selection/R2/blue/peer_view"
+      }
+    }
+  },
+  {
+    "id": "conflicting-capture",
+    "prefix": "203.0.113.0/24",
+    "vrf": "blue",
+    "ingress": "R1",
+    "egress": "R3",
+    "captured_at": "2026-10-20T09:09:00Z",
+    "reads": {
+      "received": {
+        "value": "absent",
+        "source": "conflicting-capture/R2/blue/received"
+      },
+      "import_policy": {
+        "value": "permit",
+        "source": "conflicting-capture/R2/blue/import_policy"
+      },
+      "next_hop": {
+        "value": "reachable",
+        "source": "conflicting-capture/R2/blue/next_hop"
+      },
+      "selected": {
+        "value": "present",
+        "source": "conflicting-capture/R2/blue/selected"
+      },
+      "export_policy": {
+        "value": "permit",
+        "source": "conflicting-capture/R2/blue/export_policy"
+      },
+      "peer_view": {
+        "value": "withheld",
+        "source": "conflicting-capture/R2/blue/peer_view"
+      }
+    }
+  }
+]

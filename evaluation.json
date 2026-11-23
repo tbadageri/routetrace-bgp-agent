@@ -1,0 +1,119 @@
+[
+  {
+    "case": "export-filter",
+    "expected": "export_denied",
+    "actual": "export_denied",
+    "reads": 3,
+    "order": [
+      "peer_view",
+      "selected",
+      "export_policy"
+    ]
+  },
+  {
+    "case": "import-filter",
+    "expected": "import_denied",
+    "actual": "import_denied",
+    "reads": 4,
+    "order": [
+      "peer_view",
+      "selected",
+      "received",
+      "import_policy"
+    ]
+  },
+  {
+    "case": "upstream-missing",
+    "expected": "input_absent",
+    "actual": "input_absent",
+    "reads": 3,
+    "order": [
+      "peer_view",
+      "selected",
+      "received"
+    ]
+  },
+  {
+    "case": "recursive-lookup",
+    "expected": "unresolved",
+    "actual": "unresolved",
+    "reads": 5,
+    "order": [
+      "peer_view",
+      "selected",
+      "received",
+      "import_policy",
+      "next_hop"
+    ]
+  },
+  {
+    "case": "peer-offline",
+    "expected": "peer_down",
+    "actual": "peer_down",
+    "reads": 1,
+    "order": [
+      "peer_view"
+    ]
+  },
+  {
+    "case": "advertised",
+    "expected": "advertised",
+    "actual": "advertised",
+    "reads": 2,
+    "order": [
+      "peer_view",
+      "selected"
+    ]
+  },
+  {
+    "case": "transient-export",
+    "expected": "export_denied",
+    "actual": "export_denied",
+    "reads": 3,
+    "order": [
+      "peer_view",
+      "selected",
+      "export_policy"
+    ]
+  },
+  {
+    "case": "incomplete-export",
+    "expected": "handoff",
+    "actual": "handoff",
+    "reads": 6,
+    "order": [
+      "peer_view",
+      "selected",
+      "export_policy",
+      "received",
+      "import_policy",
+      "next_hop"
+    ]
+  },
+  {
+    "case": "other-selection",
+    "expected": "handoff",
+    "actual": "handoff",
+    "reads": 6,
+    "order": [
+      "peer_view",
+      "selected",
+      "received",
+      "import_policy",
+      "next_hop",
+      "export_policy"
+    ]
+  },
+  {
+    "case": "conflicting-capture",
+    "expected": "handoff",
+    "actual": "handoff",
+    "reads": 4,
+    "order": [
+      "peer_view",
+      "selected",
+      "export_policy",
+      "received"
+    ]
+  }
+]
